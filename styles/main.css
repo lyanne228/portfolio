@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI";
+  margin: 0;
+  overflow-x: hidden;
+}
+.main {
+  display: table-row;
+}
+.navbar {
+  display: table-row;
+  box-sizing: border-box;
+  padding: 10px 150px;
+}
+.content {
+  box-sizing: border-box;
+  padding: 50px 150px;
+}
+table, tr, td {
+  border-collapse: collapse;
+}
+h2 {
+  color: #FFCC00;
+  font-size: 40pt;
+  margin-bottom: 10pt;
+  font-weight: 100;
+}
+h3 {
+  color: #FFCC00;
+  font-size: 20pt;
+  margin: 0;
+  font-weight: 400;
+}
+.project-circle {
+  /*border-radius: 50%;*/
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+div.project-circle {
+  background: rgba(0,0,0,0.75);
+  color: #FFF;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  text-align: center;
+  display: none;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0px;
+}
+div.projects-container span {
+  vertical-align:middle;
+  display: table-cell;
+}
+.projects-container {
+  height: 0px;
+  overflow-x: auto;
+  overflow: hidden;
+}
+.horizontal-container, .thumbnail-outline-container {
+  width: 0px;
+  left: 0px;
+  padding: 0 50px;
+  height: auto;
+}
+.thumbnail-outline-container {
+  z-index: 1;
+  position: relative;
+  top: 0px;
+}
+.horScroll {
+  height: 320px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  display: inline-block;
+  background-color: none;
+}
+.scrollLeft {
+  left: 0px;
+}
+.scrollRight {
+  right: 0px;
+}

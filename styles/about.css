@@ -1,0 +1,16 @@
+.about1, .about2, .about3 {
+  position: relative;
+  padding: 150px;
+  padding-top: 250px;
+  height: 0;
+  width: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.about1 { background: rgba(0, 0, 0, 0.3); }
+.about2 { background: rgba(0, 0, 0, 0.4); }
+.about3 { background: rgba(0, 0, 0, 0.5); }
+.about1 p, .about2 p, .about3 p {
+  width: 40vw;
+}
