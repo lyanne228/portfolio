@@ -15,6 +15,14 @@ body {
   box-sizing: border-box;
   padding: 50px 150px;
 }
+.fullwidth_content {
+  box-sizing: border-box;
+  padding: 0px;
+  width: 100vw;
+}
+.fullwidth_content img {
+  width: inherit;
+}
 table, tr, td {
   border-collapse: collapse;
 }
@@ -68,6 +76,7 @@ div.projects-container span {
   z-index: 1;
   position: relative;
   top: 0px;
+  width: 0px;
 }
 .horScroll {
   height: 320px;
@@ -83,4 +92,10 @@ div.projects-container span {
 }
 .scrollRight {
   right: 0px;
+}
+.thumbnailOutline {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }

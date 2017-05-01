@@ -15,7 +15,7 @@ function scrolling(){
       amount = '';
   });
 
-  $('.projects-container').children('.thumbnail-outline-container').children('img').mouseover(function(){
+  $('.projects-container').children('.thumbnail-outline-container').children('a').mouseover(function(){
     var boxNum = $(this).parent().children().index($(this)) +1;
     var textbox = $(this).parent().parent().children('.horizontal-container').children('div:nth-of-type('+boxNum+')');
     var increaseDist = $(this).parent().offset().top;
@@ -58,6 +58,7 @@ function shiftScrollBars(){
         totalWidth = parseInt(horCont.width()) + parseInt(horCont.css('padding-left')) + parseInt(horCont.css('padding-right')),
         shiftWidth = (totalWidth-pageWidth)/2;
     $(this).scrollLeft(shiftWidth);
+    $(this).children('.thumbnail-outline-container').css('width', totalWidth);
   });
 }
 
