@@ -5,3 +5,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.contact2 {
+  width: 100vw;
+}
+.contact2 img {
+  width: inherit;
+}
