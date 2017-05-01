@@ -9,7 +9,7 @@ body {
 .navbar {
   display: table-row;
   box-sizing: border-box;
-  padding: 10px 150px;
+  padding: 50px 80px;
 }
 .content {
   box-sizing: border-box;

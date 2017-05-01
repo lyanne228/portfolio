@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 3;
-  height: 100px;
+  height: 200px;
   background: linear-gradient(rgba(0,0,0,0.9) 15%, rgba(0,0,0,0.6) 50%, rgba(50,50,50,0));
 }
 .lyanne-logo, .navbar-container {
