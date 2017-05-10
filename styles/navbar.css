@@ -3,13 +3,17 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
-  height: 200px;
-  background: linear-gradient(rgba(0,0,0,0.9) 15%, rgba(0,0,0,0.6) 50%, rgba(50,50,50,0));
+  z-index: 10;
+  height: 50px;
+  background: url('../images/navbar.jpg');
+  background-size: contain;
+  display: table-row;
+  box-sizing: border-box;
+  padding: 5px 80px;
 }
 .lyanne-logo, .navbar-container {
   display: inline-block;
-  color: #FFCC00;
+  color: #FFF;
 }
 .lyanne-logo {
   font-size: 20pt;
@@ -25,9 +29,9 @@
   font-weight: 300;
 }
 .navbar-container .selected {
-  border: 1px solid #FFCC00;
+  border: 1px solid #FFF;
 }
 .navbar-container a {
-  color: #FFCC00;
+  color: #FFF;
   text-decoration: none;
 }

@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="styles/navbar.css">
   <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
   <script src="scripts/horizontal_scrollbar.js"></script>
@@ -20,7 +21,7 @@
           <tr>
             <td class="selected"><a href="#">Home</a></td>
             <td><a href="projects.html">Projects</a></td>
-            <td><a href="skills.html">Skills</a></td>
+            <!-- <td><a href="skills.html">Skills</a></td> -->
             <td><a href="about.html">About Me</a></td>
             <td><a href="contact.html">Contact</a></td>
           </tr>
@@ -29,45 +30,18 @@
     </section>
     <section class="main">
       <section class="content index1">
-        <div class="landingPageGraphic" id="graphicLeft">
-          <h2>Design</h2>
-          <p>I draw, sketch, design, and prototype.</p>
-        </div>
-        <div class="landingPageGraphic" id="graphicRight">
-          <h2>Computer Science</h2>
-          <p>Content content content content content content content<p>
-        </div>
-        <table class="landingPageMouseOver">
+        <table class="bannerMouseOvers">
           <tr>
-            <td class="graphicLeft mouseOver"></td>
-            <td class="graphicRight mouseOver"></td>
+            <td><a href="projects.html#design"><p> </p></a></td>
+            <td><a href="projects.html"><p> </p></a></td>
           </tr>
         </table>
+        <img class="indexOverlay" id="designAnimation" src="images/designBanner.png"/>
+        <img class="indexOverlay" id="codeAnimation" src="images/codeBanner.png"/>
       </section>
-      <section class="index2">
-        <div class="projects-container">
-          <div class="horizontal-container">
-            <img class="project-circle" src="images/webgl.jpg" />
-            <div class="project-circle"><span><h3>WebGL Graphics</h3></span></div>
-            <img class="project-circle" src="images/dsgn384.jpg" />
-            <div class="project-circle"><span><h3>EVF to VR</h3></span></div>
-            <img class="project-circle" src="images/sumobot.jpg" />
-            <div class="project-circle"><span><h3>SumoBot 2016</h3></span></div>
-            <img class="project-circle" src="images/internship.jpg" />
-            <div class="project-circle"><span><h3>Internship</h3></span></div>
-            <img class="project-circle" src="images/industrialDesign.jpg" />
-            <div class="project-circle"><span><h3>Industrial Design</h3></span></div>
-          </div>
-          <div class="thumbnail-outline-container">
-            <a href="projects/webgl.html"><img class="thumbnailOutline" src="images/thumbnailoutline.png" /></a>
-            <a href="projects/dsgn384.html"><img class="thumbnailOutline" src="images/thumbnailoutline.png" /></a>
-            <a href="projects/sumobot.html"><img class="thumbnailOutline" src="images/thumbnailoutline.png" /></a>
-            <a href="projects/internship.html"><img class="thumbnailOutline" src="images/thumbnailoutline.png" /></a>
-            <a href="projects/industrialDesign.html"><img class="thumbnailOutline" src="images/thumbnailoutline.png" /></a>
-          </div>
-          <div class="horScroll scrollLeft"></div>
-          <div class="horScroll scrollRight"></div>
-        </div>
+      <section id="indexTitle">
+        <p id="indexFirstTitle">I'm Lyanne.</p>
+        <p id="indexSubTitle"></p>
       </section>
     </section>
   </body>

@@ -3,99 +3,55 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-.main {
-  display: table-row;
-}
-.navbar {
-  display: table-row;
-  box-sizing: border-box;
-  padding: 50px 80px;
-}
-.content {
-  box-sizing: border-box;
-  padding: 50px 150px;
-}
-.fullwidth_content {
-  box-sizing: border-box;
-  padding: 0px;
-  width: 100vw;
-}
-.fullwidth_content img {
-  width: inherit;
-}
 table, tr, td {
   border-collapse: collapse;
 }
 h2 {
-  color: #FFCC00;
+  color: #333;
   font-size: 40pt;
   margin-bottom: 10pt;
   font-weight: 100;
 }
 h3 {
-  color: #FFCC00;
+  color: #333;
   font-size: 20pt;
   margin: 0;
   font-weight: 400;
 }
-.project-circle {
-  /*border-radius: 50%;*/
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+.main {
+  display: table-row;
+  width: 100vw;
 }
-div.project-circle {
-  background: rgba(0,0,0,0.75);
-  color: #FFF;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-  text-align: center;
-  display: none;
-  padding: 10px;
+.content {
   box-sizing: border-box;
-  border: 0px;
 }
-div.projects-container span {
-  vertical-align:middle;
+.fullwidth_content, .fullwidth_content * {
+  width: inherit;
+}
+
+
+.descriptionHover {
+  z-index: 5;
+  position: relative;
+}
+.descriptionHover a {
+  clear: none;
+  float: left;
+}
+.projectTile {
+  width: 250px;
+  height: 250px;
+  display: table;
+  clear: none;
+  float: left;
+}
+.descriptionHover a .projectTile {
+  text-align: center;
+  background: url('../images/projectTilesOverlayBG.png');
+  background-size: contain;
+  opacity: 0;
+}
+.descriptionHover a .projectTile *{
   display: table-cell;
-}
-.projects-container {
-  height: 0px;
-  overflow-x: auto;
-  overflow: hidden;
-}
-.horizontal-container, .thumbnail-outline-container {
-  width: 0px;
-  left: 0px;
-  padding: 0 50px;
-  height: auto;
-}
-.thumbnail-outline-container {
-  z-index: 1;
-  position: relative;
-  top: 0px;
-  width: 0px;
-}
-.horScroll {
-  height: 320px;
-  width: 200px;
-  position: absolute;
-  z-index: 2;
-  top: 0px;
-  display: inline-block;
-  background-color: none;
-}
-.scrollLeft {
-  left: 0px;
-}
-.scrollRight {
-  right: 0px;
-}
-.thumbnailOutline {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  position: relative;
+  vertical-align: middle;
 }

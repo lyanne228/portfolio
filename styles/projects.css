@@ -1,7 +1,7 @@
 .projects1 {
   position: relative;
   padding-top: 60px;
-  background-image: url('../images/landing_bg_draft1.jpg');
+  background-image: url('../images/engineeringProjectsBG.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -10,10 +10,13 @@
   box-sizing: border-box;
   z-index: 1;
   top: 0px;
-  left: 0px;
-  padding: 150px;
-  width: inherit;
+  right: 0px;
+  padding: 50px;
+  width: 50%;
   height: inherit;
-  background-color: rgba(0,0,0,0.4);
+  /*background-color: rgba(0,0,0,0.4);*/
   text-align: center;
+}
+.descriptionHover {
+  left: -250px;
 }
