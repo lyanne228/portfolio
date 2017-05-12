@@ -2,10 +2,11 @@ function main() {
   arrowScrollChange();
   $(window).scroll(arrowScrollChange);
   $('.upDownArrows').click(function(){
+    var n = $(document).height() - $(window).height();
     if (~$(this).css('background-image').indexOf('down')){
-      window.location.href = "#design";
+      $('html, body').animate({ scrollTop: n }, 800);
     } else {
-      window.location.href = "#";
+      $('html, body').animate({ scrollTop: 0 }, 800);
     }
   });
 }
