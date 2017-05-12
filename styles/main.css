@@ -41,6 +41,7 @@ a {
   background-image: url(../images/downArrow.png);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 
 
