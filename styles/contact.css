@@ -1,9 +1,15 @@
-.contact1 {
+.contactContainers {
   position: relative;
   padding-top: 60px;
-  background-image: url('../images/landing_bg_draft1.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: table;
+}
+.contact1 {
+  background-image: url('../images/landing_bg_draft1.jpg');
 }
 .contact2 {
   width: 100vw;
