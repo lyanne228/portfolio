@@ -31,6 +31,17 @@ a {
 .fullwidth_content, .fullwidth_content * {
   width: inherit;
 }
+.upDownArrows {
+  z-index: 9;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  left: calc(50% - 30px);
+  background-image: url(../images/downArrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 
 .descriptionHover {

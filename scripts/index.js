@@ -1,4 +1,4 @@
-function main(){
+function index(){
 
   $('.bannerMouseOvers').children().children().children('td').each(function(){
     var animID = '', subtitleText = '';
@@ -19,4 +19,4 @@ function main(){
   });
 }
 
-$(document).ready(main);
+$(document).ready(index);
