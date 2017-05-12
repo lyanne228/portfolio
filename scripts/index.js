@@ -1,11 +1,4 @@
 function main(){
-  updateImageSize();
-  $(document).on('resize', updateImageSize);
-
-  var bgImgHeight = $(window).width()/4*3,
-      topMargin = ($(window).height() - bgImgHeight )/2;
-  console.log(topMargin);
-  $('.index1').css('top', '+='+topMargin+'px');
 
   $('.bannerMouseOvers').children().children().children('td').each(function(){
     var animID = '', subtitleText = '';
@@ -17,17 +10,13 @@ function main(){
       subtitleText = 'I code.';
     }
     $(this).hover(function(){
-      $(animID).attr('src', $(animID).attr('src').replace('.png', '_anim.gif'));
+      $(animID).css('background-image', $(animID).css('background-image').replace('.png', '_anim.gif'));
       $('#indexSubTitle').html(subtitleText);
     }, function(){
-      $(animID).attr('src', $(animID).attr('src').replace('_anim.gif', '.png'));
+      $(animID).css('background-image', $(animID).css('background-image').replace('_anim.gif', '.png'));
       $('#indexSubTitle').html('');
     });
   });
 }
 
-function updateImageSize() {
-  $('.index1').attr('width', '100vw');
-};
-
-$(document).ready(main).bind('resize',updateImageSize);
+$(document).ready(main);

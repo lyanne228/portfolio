@@ -1,18 +1,28 @@
 body {
   overflow: hidden;
 }
-.index1 {
+.indexStatic {
   position: relative;
   padding-top: 60px;
-  background-image: url('../images/landing_bg_draft1.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
   display: table;
 }
+.index1 {
+  background-image: url('../images/landing_bg_draft1.jpg');
+}
+.index2 {
+  background-image: url('../images/designBanner.png');
+  top: -100vh;
+}
+.index3 {
+  background-image: url('../images/codeBanner.png');
+  top: -200vh;
+}
 .indexOverlay {
-  position: absolute;
-  top: 0px;
-  width: 100%;
   z-index: 2;
 }
 .bannerMouseOvers {

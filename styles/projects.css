@@ -1,22 +1,23 @@
-.projects1 {
+.projectsContainer {
   position: relative;
   padding-top: 60px;
-  background-image: url('../images/engineeringProjectsBG.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
 }
+#projects1 { background-image: url('../images/engineeringProjectsBG.jpg'); }
+#projects2 { background-image: url('../images/designProjectsBG.jpg'); }
 .projectsPageGraphic {
   position: absolute;
   box-sizing: border-box;
   z-index: 1;
   top: 0px;
-  right: 0px;
   padding: 50px;
   width: 50%;
   height: inherit;
-  /*background-color: rgba(0,0,0,0.4);*/
   text-align: center;
 }
-.descriptionHover {
-  left: -250px;
-}
+#engBanner { right: 0px; }
+#desBanner { left: 0px; }

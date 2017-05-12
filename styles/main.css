@@ -18,6 +18,9 @@ h3 {
   margin: 0;
   font-weight: 400;
 }
+a {
+  text-decoration: none;
+}
 .main {
   display: table-row;
   width: 100vw;
@@ -34,22 +37,21 @@ h3 {
   z-index: 5;
   position: relative;
 }
-.descriptionHover a {
-  clear: none;
-  float: left;
-}
 .projectTile {
-  width: 250px;
-  height: 250px;
-  display: table;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
   clear: none;
-  float: left;
+  background-size: contain;
+  margin: 10px;
 }
 .descriptionHover a .projectTile {
   text-align: center;
   background: url('../images/projectTilesOverlayBG.png');
   background-size: contain;
   opacity: 0;
+  display: table;
+  margin: 0px;
 }
 .descriptionHover a .projectTile *{
   display: table-cell;
