@@ -2,18 +2,39 @@
   position: relative;
   padding-top: 60px;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   height: 100vh;
   width: 100vw;
   display: table;
 }
-.contact1 {
-  background-image: url('../images/landing_bg_draft1.jpg');
-}
-.contact2 {
-  width: 100vw;
-}
-.contact2 img {
-  width: inherit;
-}
+.contact1 { background-image: url('../images/blueBG.jpg'); }
+.contact1 #contactPageContents { width: 60vw; margin: auto; }
+.contact1 #contactPageContents img { width: inherit; }
+.contact1 #contactButtons td {
+  padding: 5px;
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px; }
+.contact1 #contactButtons td:last-child { width: 100vw; }
+.contact1 #contactButtons img, .contact1 #contactButtons a { height: inherit; width:auto; display: inline-block; }
+.contact1 #contactButtons p { display: inline-block; margin: 0 10px; vertical-align: top; line-height: 50px; }
+
+
+/**************** CONTACT FORM STYLING *****************/
+.contact1 #contactPageContents #contactFormTd { vertical-align: top; }
+.contact1 form { width: 40vw; }
+.contact1 form input, .contact1 #message {
+  display: block;
+  border: 0;
+  margin: 5px 0;
+  padding: 5px;
+  width: 40vw;
+  background-color: #FFF;
+  box-sizing: border-box;
+  font-size: 12pt;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333; }
+.contact1 form input::placeholder { color: #333; }
+.contact1 #message { height: 150px; }
+.contact1 #submitButton { color: #FFF; background: url('../images/midBlueSQ.jpg'); }

@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="styles/navbar.css">
   <link rel="stylesheet" type="text/css" href="styles/contact.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
   <script src="scripts/contact.js"></script>
 
   <body>
@@ -27,10 +26,32 @@
       </div>
     </section>
     <section class="main">
-      <section class="content contactContainers contact1">
-      </section>
-      <section class="contact2">
-        <img src="images/projects_drafts/contact.jpg">
+      <section class="contactContainers content contact1">
+        <table id="contactPageContents">
+          <tr>
+            <td><img id="contactPageIcon" src="images/projectsBG.jpg"></td>
+            <td id="contactFormTd">
+              <form id="contactForm">
+                <input name="name" id="name" type="text" placeholder="Name"/>
+                <input name="email" id="email" type="email" placeholder="Email"/>
+                <textarea rows="6" id="message" form="contactForm">Message</textarea>
+                <input id="submitButton" type="submit" value="Send"/>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table id="contactButtons">
+                <tr>
+                  <td id="emailMe"><a href="mailto:lyanne228@gmail.com"><img src="images/emailMe.png"/></a></td>
+                  <td id="resume"><img src="images/resume.png"/></td>
+                  <td id="github"><a href="https://github.com/lyanne228"><img src="images/github.png"/></a></td>
+                  <td></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       </section>
     </section>
   </body>
