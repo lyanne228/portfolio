@@ -7,8 +7,8 @@
   height: 100vh;
   width: 100vw;
 }
-#projects1 { background-image: url('../images/engineeringProjectsBG.jpg'); }
-#projects2 { background-image: url('../images/designProjectsBG.jpg'); }
+#projects1 { background-image: url('../images/projectsBanners/engineeringProjectsBG.jpg'); }
+#projects2 { background-image: url('../images/projectsBanners/designProjectsBG.jpg'); }
 .projectsPageGraphic {
   position: absolute;
   box-sizing: border-box;

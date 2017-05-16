@@ -6,8 +6,10 @@
 
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projectPages.css">
+  <link rel="icon" href="../images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/projectPages.js"></script>
 
   <body>
     <section class="navbar">
@@ -26,7 +28,66 @@
     </section>
     <section class="main">
       <section class="fullwidth_content">
-        <img src="../images/projects_drafts/summerInternship.jpg">
+        <section id="topHeader">
+          <div class="topHeaderLeft">
+            <img id="titleIcon" src="../images/icons/internship.png"/>
+          </div>
+          <div class="topHeaderRight">
+            <h1 id="titleText">UCM Summer Internship</h1>
+            <p class="titleDesc"><em>When</em> June - Sep 2017</p>
+            <p class="titleDesc"><em>Where</em> Berlin, Germany</p>
+            <p class="titleDesc"><em>Main role</em> Intern - Website/Web app developer, Animator</p>
+          </div>
+        </section>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I was an intern at uCastMe GmbH (UCM) in Berlin from June to September 2016. I worked with the marketing department to implement web apps and produce animations for the relaunch of its website.</p>
+            <p>UCM was founded in 2014 and is based in Berlin. They are an event staffing agency and ahve worked with several big brands in and around Berlin. They were relaunching their website to help the company expand to other regions of Germany and Europe.</p>
+          </div>
+          <div class="twoColsB">
+            <div class="imageSlider">
+              <div class="allImagesSlider">
+                <img src="../images/dsgn384/slider1.jpg"><img src="../images/dsgn384/slider2.jpg"><img src="../images/dsgn384/slider3.jpg"><img src="../images/dsgn384/slider4.jpg">
+              </div>
+              <div class="imageSliderControls">
+                <img class="leftArrow" src="../images/arrows/leftArrow.png">
+                <img class="rightArrow" src="../images/arrows/rightArrow.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <img class="fullwidth_content" src="../images/dsgn384/fullWidth1.jpg"/> -->
+
+        <h4 class="sectionTitle">Price Calculator</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I made a price calculator web app that allows prospective clients to estimate the costs of engaging UCM to staff their event. The calculator was implemented using JavaScript, was compatible with multiple screen sizes, and also integrated with other web apps.</p>
+            <p>UCM constantly updates information on pricing, so I designed the calculator to pull the pricing data from the latest update. After tallying up the services needed, prospective clients could key in their event details and submit a request to UCM.</p>
+            <p>The price calculator can be seen on UCM's website: <a href="https://ucm.agency/en/service/calculator/" target="_blank">https://ucm.agency/en/service/calculator/</a></p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Promotional Animations</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I created a short animation that described the client's perspective and motivations for working with UCM, using Adobe Flash Professional. I drafted a storyboard and it was approved by the CEO and marketing department. I had autonomy on colour choices and aesthetics.</p>
+            <p>I took 3 days to complete the first draft. The CEO was impressed and suggested a few storyboard changes. The marketing department recorded voiceovers in both German and English. The team was satisfied with the edits and requested for another short animation to describe the job seeker's perspective.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Other Projects</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I built an event calendar web app that listed all upcoming events in Germany that might need staffing. This web app allowed clients to select an event and be directed to the price calculator web app with the event details automatically populated.</p>
+            <p>I built a location map web app that displays all UCM offices and locations that they offer their services in Germany. The map was also interactive and linked to UCM's landing pages for specific locations.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
       </section>
     </section>
   </body>

@@ -6,8 +6,10 @@
 
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projectPages.css">
+  <link rel="icon" href="../images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/projectPages.js"></script>
 
   <body>
     <section class="navbar">
@@ -26,7 +28,67 @@
     </section>
     <section class="main">
       <section class="fullwidth_content">
-        <img src="../images/projects_drafts/sumobot.jpg">
+        <section id="topHeader">
+          <div class="topHeaderLeft">
+            <img id="titleIcon" src="../images/icons/sumobot.png"/>
+          </div>
+          <div class="topHeaderRight">
+            <h1 id="titleText">Sumobot 2016</h1>
+            <p class="titleDesc"><em>When</em> Feb - May 2016</p>
+            <p class="titleDesc"><em>Where</em> Nanyang Technological University, Singapore</p>
+            <p class="titleDesc"><em>Main role</em> Programmer, Electronics</p>
+          </div>
+        </section>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I joined a lightweight Sumobot competition with four classmates in 2016. My main role was to program an autonomous fighting robot, using an Arduino Uno microprocessor.</p>
+            <p>Our Sumobot made it through the group stages undefeated, but lost to the winning Sumobot in the quarterfinal round. We won the Inspector Gadget prize for innovative Sumobot design.</p>
+          </div>
+          <div class="twoColsB">
+            <div class="imageSlider">
+              <div class="allImagesSlider">
+                <img src="../images/dsgn384/slider1.jpg"><img src="../images/dsgn384/slider2.jpg"><img src="../images/dsgn384/slider3.jpg"><img src="../images/dsgn384/slider4.jpg">
+              </div>
+              <div class="imageSliderControls">
+                <img class="leftArrow" src="../images/arrows/leftArrow.png">
+                <img class="rightArrow" src="../images/arrows/rightArrow.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <img class="fullwidth_content" src="../images/dsgn384/fullWidth1.jpg"/> -->
+
+        <h4 class="sectionTitle">Starting by Falling Down</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>This was a lightweight Sumobot competition; we could only make a robot that was maximum 12 cm in length and width, and 30 cm in height.</p>
+            <p>We realised that a tall and boxy Sumobot would be less stable than a short and wide one. We wanted to take advantage of the taller height allowance to increase the Sumobot's length.</p>
+            <p>To achieve this, we designed our Sumobot to start standing up, and tip over to get into its active position. The larger footprint also meant that we could house all components on one "layer", keeping the center of gravity low and increasing its stability.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Confusing the Enemy</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>The playing field was a black circular platform with a white border to mark the edges. The goal was to push the other Sumobot off the platform. We designed several white flaps that unfold and can slip under the other Sumobots.</p>
+            <p>This made it easier to push the opponent off in two ways. Firstly, the line detectors on the other Sumobot would detect the white of the flaps and move backwards, essentially blinding the opponent. Secondly, the flaps that slip under the opponent reduces their friction.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Outsmarting the Enemy</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>The Sumobot had to be fully autonomous. There was a line detector and an infra red sensor on each side of the Sumobot that detect the white border and objects ahead. The challenge was to optimise the algorithm for the Sumobot to use the data from its sensors to outsmart and out-maneuver the opponent.</p>
+            <p>We realised early on that simple algorithms (like turning right until the white border or the opponent is detected) are too slow and may result in the Sumobot "tracing" the white border but never finding the opponent.</p>
+            <p>The final algorithm we used in the competition consisted of 2 subroutines that were designed to increase the chance of the Sumobot facing the opponent head-on, especially after backing off from the white border.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
       </section>
     </section>
   </body>

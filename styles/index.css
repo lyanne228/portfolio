@@ -12,14 +12,14 @@ body {
   display: table;
 }
 .index1 {
-  background-image: url('../images/landing_bg_draft1.jpg');
+  background-image: url('../images/indexBanners/indexBanner.jpg');
 }
 .index2 {
-  background-image: url('../images/designBanner.png');
+  background-image: url('../images/indexBanners/designBanner.png');
   top: -100vh;
 }
 .index3 {
-  background-image: url('../images/codeBanner.png');
+  background-image: url('../images/indexBanners/codeBanner.png');
   top: -200vh;
 }
 .indexOverlay {

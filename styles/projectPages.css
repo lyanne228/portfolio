@@ -1,0 +1,66 @@
+.main {
+  background-image: url('../images/plainBG/whiteBGtile.jpg');
+  background-repeat: repeat; }
+.oneCol, .twoCols, .sectionTitle {
+  width: 80vw;
+  box-sizing: border-box;
+  margin: 10px auto 80px auto;
+  overflow: hidden; }
+.sectionTitle {
+  margin: 40px auto 10px auto; }
+
+/******************* TITLE BANNER STYLE ******************/
+#topHeader {
+  padding: 100px 10vw 80px 10vw;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto; }
+.topHeaderRight {
+  width: calc(80vw - 200px);
+  height: 200px;
+  box-sizing: border-box;
+  float: right; }
+.topHeaderLeft {
+  width: 200px;
+  height: 200px;
+  float: left; }
+#titleIcon { width: 200px; }
+#titleText, .titleDesc { padding: 0 0 0 30px; box-sizing: border-box; }
+#titleText { width: inherit; }
+#topHeader h1, #topHeader p { margin: 5px 0 0 0; }
+
+/********************* 2 COL CONTENT ********************/
+.twoColsA, .twoColsB {
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block; }
+.twoColsA { float: left; }
+.twoColsB { float: right; }
+.twoColsA *, .twoColsB * { width: 100%; }
+
+/********************* IMAGE SLIDER ********************/
+.imageSlider, .allImagesSlider img, .imageSliderControls {
+  width: 480px;
+  height: 270px;
+  display: inline-block;
+  overflow: hidden;
+}
+.twoColsB .imageSlider { float: right; }
+.allImagesSlider { height: 270px; }
+.imageSliderControls {
+  position: absolute;
+  z-index: 3;
+  height: inherit;
+  top: 0;
+  left: 0; }
+.imageSliderControls img {
+  height: 100px;
+  width: 67px;
+  margin: 85px 0;
+  background-color: rgba(0,0,0,0.4);
+}
+.imageSliderControls .rightArrow {
+  float: right;
+}

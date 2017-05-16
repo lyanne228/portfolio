@@ -8,7 +8,7 @@
   width: 100vw;
   display: table;
 }
-.contact1 { background-image: url('../images/blueBG.jpg'); }
+.contact1 { background-image: url('../images/plainBG/blueBG.jpg'); }
 .contact1 #contactPageContents { width: 60vw; margin: auto; }
 .contact1 #contactPageContents img { width: inherit; }
 .contact1 #contactButtons td {
@@ -37,4 +37,4 @@
   color: #333; }
 .contact1 form input::placeholder { color: #333; }
 .contact1 #message { height: 150px; }
-.contact1 #submitButton { color: #FFF; background: url('../images/midBlueSQ.jpg'); }
+.contact1 #submitButton { color: #FFF; background: url('../images/smallSquares/midBlueSQ.jpg'); }

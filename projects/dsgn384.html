@@ -6,8 +6,10 @@
 
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projectPages.css">
+  <link rel="icon" href="../images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/projectPages.js"></script>
 
   <body>
     <section class="navbar">
@@ -26,7 +28,69 @@
     </section>
     <section class="main">
       <section class="fullwidth_content">
-        <img src="../images/projects_drafts/dsgn384.jpg">
+        <section id="topHeader">
+          <div class="topHeaderLeft">
+            <img id="titleIcon" src="../images/icons/dsgn384.png"/>
+          </div>
+          <div class="topHeaderRight">
+            <h1 id="titleText">Interdisciplinary Design Project</h1>
+            <p class="titleDesc"><em>When</em> Jan - May 2017</p>
+            <p class="titleDesc"><em>Where</em> Northwestern University, IL, USA</p>
+            <p class="titleDesc"><em>Main role</em> Market research, prototype</p>
+          </div>
+        </section>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I am part of a team that's working with Zacuto to find an application for their Electronic View Finder (EVF) series - the Graticals - in the medical field and beyond.</p>
+            <p>Zacuto is a filmmaker accessories company that makes video camera rigs and accessories. These accessories attach onto prosumer standard cameras, turning them into professional filmmaking cameras.</p>
+            <p>Their trademark products are the Gratical series of EVFs. These devices attach onto the front of a camera and display what the camera is capturing in real time with a HDMI feed.</p>
+          </div>
+          <div class="twoColsB">
+            <div class="imageSlider">
+              <div class="allImagesSlider">
+                <img src="../images/dsgn384/slider1.jpg"><img src="../images/dsgn384/slider2.jpg"><img src="../images/dsgn384/slider3.jpg"><img src="../images/dsgn384/slider4.jpg">
+              </div>
+              <div class="imageSliderControls">
+                <img class="leftArrow" src="../images/arrows/leftArrow.png">
+                <img class="rightArrow" src="../images/arrows/rightArrow.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <img class="fullwidth_content" src="../images/dsgn384/fullWidth1.jpg"/> -->
+
+        <h4 class="sectionTitle">Zacuto and the Graticals</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>Zacuto was approached by a German hospital group that wanted two Gratical Eyes to be attached together for experimenting with high quality stereoscopic displays in the medical field. They sent the German company the 'Eyenoculars' and have not heard from them.</p>
+            <p>There are 3 models of the Graticals: the X, HD, and Eye. All 3 models come with internal processing capabilities that can alter the image displayed. The X and HD have similar hardware and have batteries; the Eye is smaller and doesn't have batteries, but is much lighter. The HD and the Eye come with the full suite of software processing capabilities, and the X has the basic suite of software with the option of adding on additional features.</p>
+            <p>We chose to prototype with the Gratical HDs rather than Zacuto's proposed Gratical Eyes because of the internal circuitry layout in the HDs. Not enough material could be removed from the casings of the Gratical Eyes to bring 2 devices close enough.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">First Prototype</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>We learnt early on that expert interviews and user testing with medical professionals was hard to come by. For a 20-week project, the amount of expert testing that a team of 4 undergraduates could obtain would be far from sufficient to bring a medical device to market.</p>
+            <p>The goal of our prototype was to get doctors and medical students interested in the idea of processed stereoscopic vision in the operating room or simulation lab. To that end, we wanted to build a functional demo rig that would demonstrate the processing capabilities of the Graticals and test user interest.</p>
+            <p>Besides difficulties scheduling time with medical professionals, we faced prototyping problems with getting the distance between the 2 units of the Graticals to be adjustable and remain parallel. We also did not have a stereoscopic camera, so we were limited to stock footages.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Second Prototype</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>Several issues were raised from our first prototype: the distance between the 2 units have to be adjustable to accommodate different interpupillary distances; the 2 units have to remain parallel so that the user can merge the 2 displays into a stereoscopic display; we needed a stereoscopic camera to achieve an interactive demo.</p>
+            <p>We built a sliding mechanism out of drawer slides, that would easily allow the user to adjust the interpupillary distance and maintain their parallelism. We also built a stereoscopic camera out of 2 webcams and built a webcam software to go with it.</p>
+            <p>This prototype allowed us to do more useful user testing.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
       </section>
     </section>
   </body>

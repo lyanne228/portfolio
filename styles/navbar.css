@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 10;
   height: 50px;
-  background: url('../images/navbar.jpg');
+  background: url('../images/smallSquares/navbar.jpg');
   background-size: contain;
   display: table-row;
   box-sizing: border-box;

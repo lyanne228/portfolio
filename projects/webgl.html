@@ -6,8 +6,10 @@
 
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+  <link rel="stylesheet" type="text/css" href="../styles/projectPages.css">
+  <link rel="icon" href="../images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/projectPages.js"></script>
 
   <body>
     <section class="navbar">
@@ -26,7 +28,71 @@
     </section>
     <section class="main">
       <section class="fullwidth_content">
-        <img src="../images/projects_drafts/webgl.jpg">
+        <section id="topHeader">
+          <div class="topHeaderLeft">
+            <img id="titleIcon" src="../images/icons/webgl.png"/>
+          </div>
+          <div class="topHeaderRight">
+            <h1 id="titleText">WebGL</h1>
+            <p class="titleDesc"><em>When</em> Jan - Mar 2017</p>
+            <p class="titleDesc"><em>Where</em> Northwestern University, IL, USA</p>
+            <p class="titleDesc"><em>Main role</em> Student</p>
+          </div>
+        </section>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I took a class on basic WebGL graphics and animation at Northwestern University instructed by Professor J. Tumblin. Over the course of 3 projects, I gained a basic understanding of camera perspectives, lighting and shading in WebGL.</p>
+            <p>We had free rein to draw anything we wanted for the projects, but we had to implement original components using the starter code as a guide.</p>
+          </div>
+          <div class="twoColsB">
+            <div class="imageSlider">
+              <div class="allImagesSlider">
+                <img src="../images/dsgn384/slider1.jpg"><img src="../images/dsgn384/slider2.jpg"><img src="../images/dsgn384/slider3.jpg"><img src="../images/dsgn384/slider4.jpg">
+              </div>
+              <div class="imageSliderControls">
+                <img class="leftArrow" src="../images/arrows/leftArrow.png">
+                <img class="rightArrow" src="../images/arrows/rightArrow.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <img class="fullwidth_content" src="../images/dsgn384/fullWidth1.jpg"/> -->
+
+        <h4 class="sectionTitle">Project A - Squidwards and Patricks</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>The objective of the assignment was to familiarise myself with WebGL coding and its basic rendering functions.</p>
+            <p>I wanted to create 3D characters that I knew using simple shapes. I drew basic shapes like pyramids and cubes, and more complicated ones like a parabolic dome and a pentagon. I also tried implementing gradients in the shading.</p>
+            <p>I implemented click-and-drag navigation, and did some leg and tentacle movements that the user could control too.</p>
+            <p>You can view Squidwards and Patricks here.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Project B - P I X A R</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I wanted to animate the iconic Pixar lamp. This was much more challenging to animate than squids and starfish, due to the complexity of the moving parts. Users viewing this model could use the ground grid and keyboard navigation to move in the scene.</p>
+            <p>The objective was to explore different camera settings and to have two view ports. I rendered a perspective view (on left), and an orthogonal view (on right) of the same scene.</p>
+            <p>You can view P I X A R here.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
+
+        <h4 class="sectionTitle">Project C - P I X A R in Technicolor</h4>
+        <section class="twoCols">
+          <div class="twoColsA">
+            <p>I really liked the Pixar lamp from Project B and wanted to use it again when practicing lighting and shading settings.</p>
+            <p>I implemented Blinn-Phong and Phong lighting settings, which determine how light reflects off of objects and materials in the scene. I also implemented Phong and Gouraud shading settings, which determine how objects are rendered in the scene.</p>
+            <p>I considered different material effects - I used 5 material settings like red plastic, shiny platinum, and black rubber on the lamps and on the ground grid.</p>
+            <p>Similar to Project B, users can navigate using keyboard controls, with additional settings for rolling left and right, and a cruise setting that moves the view forward. Users can toggle and adjust settings for the 2 light sources (a wrold light and a head light).</p>
+            <p>You can view P I X A R in Technicolor here.</p>
+          </div>
+          <div class="twoColsB">
+          </div>
+        </section>
       </section>
     </section>
   </body>
