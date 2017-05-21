@@ -1,5 +1,6 @@
 body {
-  font-family: "Segoe UI";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   margin: 0;
   overflow-x: hidden;
 }
@@ -7,16 +8,16 @@ table, tr, td {
   border-collapse: collapse;
 }
 h1 {
-  color: rgb(22, 104, 101);
+  color: rgb(86, 145, 143);
   font-size: 50pt;
   margin-bottom: 10pt;
-  font-weight: 100;
+  font-weight: 300;
 }
 h2 {
   color: #333;
   font-size: 40pt;
   margin-bottom: 10pt;
-  font-weight: 100;
+  font-weight: 300;
 }
 h3 {
   color: #333;
@@ -27,17 +28,25 @@ h3 {
 h4 {
   color: #333;
   font-size: 30pt;
-  font-weight: 100;
+  font-weight: normal;
   padding-bottom: 5px;
-  border-bottom: 2px solid rgb(86, 145, 143);
+  border-bottom: 1px solid rgb(86, 145, 143);
 }
 em {
   color: rgb(86, 145, 143);
   font-style: normal;
+  font-weight: normal;
   text-decoration: none;
+}
+p {
+  font-size: 13pt;
 }
 a {
   text-decoration: none;
+  color: rgb(22,104,101);
+}
+a:active, a:hover {
+  color: #333;
 }
 .main {
   display: table-row;

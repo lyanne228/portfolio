@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>P I X A R</title>
+  </head>
+
+  <body onload="main()" onresize="drawResize()" style="margin:0;font-family:sans-serif;font-size:10pt;">
+    <canvas id="webgl" width="600px" height="600px">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+  <div style="height:22vh; overflow-y:auto;">
+    <div style="width:28%; float:left; clear:none; padding: 10px;">
+      <button id="resetPosition" onclick="resetPosition()">Reset Position</button>
+      <button id="runStop" onclick="runStopFunction()">Stop/Run</button>
+    </div>
+    <div style="width:70%; float:left; clear:none;">
+      <ol>
+        <li>Use the arrow keys to move around.</li>
+        <li>Use the W and S keys to pitch up and down, the A and D keys to rotate left and right (yaw), and the Z and X keys to roll left and right.</li>
+        <li>Use the C key to cruise forward (to experience plane navigation).</li>
+        <li>Use the Spacebar to make the lamp jump.</li>
+        <li>Use the R key or the 'Reset Position' button to return to the default position.</li>
+        <li>Use the F key or the 'Stop/Run' button to return to stop and start the lamp animation. After clicking either button, be sure to click outside the button.<br/>
+          Failure to do so could result in glitches when making the lamp jump.</li>
+      </ol>
+    </div>
+  </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-mod.js"></script>
+    <script src="LohLyanne_ProjB.js"></script>
+  </body>
+</html>

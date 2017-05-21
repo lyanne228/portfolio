@@ -23,7 +23,7 @@ function projectPagesMain() {
   $('.rightArrow').click(function(){
     if ($(this).parent().parent().scrollLeft()
         >= $(this).parent().parent().children('.allImagesSlider').width()
-        - $(this).parent().parent().children('.allImagesSlider').children('img').width())
+        - $(this).parent().parent().children('.allImagesSlider').children('.singleImage').width())
       amount = '-=' + $(this).parent().parent().children('.allImagesSlider').width();
     else
       amount = '+=480';

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>P I X A R in Technicolor</title>
+  </head>
+  <style>
+    table {border-collapse: collapse; display: inline-block; vertical-align: top;}
+    #worldLight td {width: 60px; overflow: hidden; text-align: center;}
+    #worldLight td button {width: 60px;}
+    input {box-sizing: border-box; width: 60px; text-align: center;}
+    .green {background: green; color: white;}
+    .red {background: red; color: white;}
+    button {border: 1px solid white; padding: 5px;}
+    button:hover {border: 1px solid black;}
+  </style>
+
+
+  <body onload="main()" onresize="drawResize()" style="margin:0;font-family:sans-serif;font-size:10pt;">
+    <canvas id="webgl" width="600px" height="600px">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+  <div style="height:180px; overflow-y:auto;">
+    <div style="width:420px; float:left; clear:none; padding: 10px;">
+      <table>
+        <tr>
+          <td colspan="2">
+            <button id="resetPosition" onclick="resetPosition()">Reset Position</button>
+            <button id="runStop" onclick="runStopFunction()" class="green">Stop/Run</button>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+          <td>World Light</td>
+          <td>
+            <button id="toggleWL" onclick="toggleLight('toggleWL')" class="green">On/Off</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Head Light</td>
+          <td>
+            <button id="toggleHL" onclick="toggleLight('toggleHL')" class="green">On/Off</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Shading</td>
+          <td>
+            <button id="PS" onclick="setShading(0)" class="green">Phong</button>
+            <button id="GS" onclick="setShading(1)">Gouraud</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Lighting</td>
+          <td>
+            <button id="BL" onclick="setLighting(0)" class="green">Blinn-Phong</button>
+            <button id="PL" onclick="setLighting(1)">Phong</button>
+          </td>
+        </tr>
+      </table>
+      <table id="worldLight">
+        <tr>
+          <td colspan="3">World Light Adjustments</td>
+        </tr>
+        <tr>
+          <td>
+            <button id="move+X" onclick="moveWorldLight(0, 'up')">+X</button>
+          </td>
+          <td>
+            <button id="move+Y" onclick="moveWorldLight(1, 'up')">+Y</button>
+          </td>
+          <td>
+            <button id="move+Z" onclick="moveWorldLight(2, 'up')">+Z</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="Move-X" onclick="moveWorldLight(0, 'down')">-X</button>
+          </td>
+          <td>
+            <button id="move-Y" onclick="moveWorldLight(1, 'down')">-Y</button>
+          </td>
+          <td>
+            <button id="move-Z" onclick="moveWorldLight(2, 'down')">-Z</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Ambient</td>
+          <td>Diffuse</td>
+          <td>Specular</td>
+        </tr>
+        <tr>
+          <td>
+            <input id="aR" value="0.4"/>
+          </td>
+          <td>
+            <input id="dR" value="1.0"/>
+          </td>
+          <td>
+            <input id="sR" value="1.0"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="aG" value="0.4"/>
+          </td>
+          <td>
+            <input id="dG" value="1.0"/>
+          </td>
+          <td>
+            <input id="sG" value="1.0"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="aB" value="0.4"/>
+          </td>
+          <td>
+            <input id="dB" value="1.0"/>
+          </td>
+          <td>
+            <input id="sB" value="1.0"/>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div style="width:calc(100vw - 470px); float:left; clear:none;">
+      <ol>
+        <li>Use the arrow keys to move around.</li>
+        <li>Use the W and S keys to pitch up and down, the A and D keys to rotate left and right (yaw), and the Z and X keys to roll left and right.</li>
+        <li>Use the C key to cruise forward (to experience plane navigation).</li>
+        <li>Use the Spacebar to make the lamp jump.</li>
+        <li>Use the R key or the 'Reset Position' button to return to the default position.</li>
+        <li>Use the F key or the 'Stop/Run' button to return to stop and start the lamp animation. After clicking either button, be sure to click outside the button.<br/>
+          Failure to do so could result in glitches when making the lamp jump.</li>
+        <li>Use the buttons/settings fields to change the lighting and shading settings.</li>
+      </ol>
+    </div>
+  </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="lib/cuon-matrix-mod.js"></script>
+		<script src="lib/materials_Ayerdi03.js"></script>
+		<script src="lib/lights-JT.js"></script>
+    <script src="LohLyanne_ProjC.js"></script>
+  </body>
+</html>

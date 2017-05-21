@@ -1,6 +1,7 @@
 .main {
-  background-image: url('../images/plainBG/whiteBGtile.jpg');
-  background-repeat: repeat; }
+  background-image: url('../images/plainBG/blueBGtile.jpg');
+  background-repeat: repeat;
+  color: #333; }
 .oneCol, .twoCols, .sectionTitle {
   width: 80vw;
   box-sizing: border-box;
@@ -13,22 +14,23 @@
 #topHeader {
   padding: 100px 10vw 80px 10vw;
   width: 100vw;
+  height: 100vh;
+  min-height: 60vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   overflow: hidden;
-  margin: auto; }
-.topHeaderRight {
-  width: calc(80vw - 200px);
-  height: 200px;
-  box-sizing: border-box;
-  float: right; }
-.topHeaderLeft {
-  width: 200px;
-  height: 200px;
-  float: left; }
+  margin: auto;
+  display: table; }
+#topHeaderWrapper {
+  width: 50vw;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: bottom; }
 #titleIcon { width: 200px; }
-#titleText, .titleDesc { padding: 0 0 0 30px; box-sizing: border-box; }
-#titleText { width: inherit; }
-#topHeader h1, #topHeader p { margin: 5px 0 0 0; }
+#titleText { width: inherit; margin: 0;}
+#topHeaderWrapper p { font-size: 14pt; color: #FFF; font-weight: 300; }
 
 /********************* 2 COL CONTENT ********************/
 .twoColsA, .twoColsB {
@@ -41,26 +43,33 @@
 .twoColsA *, .twoColsB * { width: 100%; }
 
 /********************* IMAGE SLIDER ********************/
-.imageSlider, .allImagesSlider img, .imageSliderControls {
-  width: 480px;
-  height: 270px;
+.imageSlider, .singleImage, .imageSliderControls {
+  max-width: 480px;
   display: inline-block;
-  overflow: hidden;
-}
+  float: left;
+  overflow: hidden; }
+.singleImage { display: table; }
+.singleImage video { display: table-cell; vertical-align: middle; }
+.sixteen_nine, .sixteen_nine .allImagesSlider, .sixteen_nine .singleImage img { height: 270px; }
+.long_aspectratio, .long_aspectratio .allImagesSlider, .long_aspectratio .singleImage img { height: 203px; }
+.video_aspectratio, .video_aspectratio .allImagesSlider, .video_aspectratio .singleImage, .video_aspectratio .singleImage { height: 853px; }
+.imageSlider { margin-top: 20px; }
+.video_aspectratio { margin-top: 100px; }
+.singleImage { text-align: center; background-color: #333; }
+.singleImage img { width: auto; max-width: 480px; }
 .twoColsB .imageSlider { float: right; }
-.allImagesSlider { height: 270px; }
 .imageSliderControls {
   position: absolute;
   z-index: 3;
-  height: inherit;
+  height: auto;
   top: 0;
   left: 0; }
 .imageSliderControls img {
   height: 100px;
   width: 67px;
-  margin: 85px 0;
-  background-color: rgba(0,0,0,0.4);
-}
-.imageSliderControls .rightArrow {
-  float: right;
-}
+  margin: 0;
+  background-color: rgba(0,0,0,0.4); }
+.sixteen_nine .imageSliderControls img { margin-top: 85px; }
+.long_aspectratio .imageSliderControls img { margin-top: 51px; }
+.video_aspectratio .imageSliderControls img { margin-top: 377px; }
+.imageSliderControls .rightArrow { float: right; }
