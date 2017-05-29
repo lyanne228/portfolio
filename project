@@ -20,11 +20,11 @@
       <div class="navbar-container">
         <table>
           <tr>
-            <td><a href="index.html">Home</a></td>
+            <td><a href="index">Home</a></td>
             <td class="selected"><a href="#">Projects</a></td>
             <!-- <td><a href="skills.html">Skills</a></td> -->
-            <td><a href="about.html">About Me</a></td>
-            <td><a href="contact.html">Contact</a></td>
+            <td><a href="about">About Me</a></td>
+            <td><a href="contact">Contact</a></td>
           </tr>
         </table>
       </div>
@@ -36,7 +36,7 @@
           <!-- <p class="text-white"></p> -->
           <div class="projectTile" style="background-image: url('images/icons/sumobot.png')"/>
             <div class="descriptionHover">
-              <a href="projects/sumobot.html">
+              <a href="projects/sumobot">
                 <div class="projectTile">
                   <h3>Sumobot</h3>
                 </div>
@@ -45,7 +45,7 @@
           </div>
           <div class="projectTile" style="background-image: url('images/icons/internship.png')"/>
             <div class="descriptionHover">
-              <a href="projects/internship.html">
+              <a href="projects/internship">
                 <div class="projectTile">
                   <h3>Summer Internship</h3>
                 </div>
@@ -54,7 +54,7 @@
           </div>
           <div class="projectTile" style="background-image: url('images/icons/webgl.png')"/>
             <div class="descriptionHover">
-              <a href="projects/webgl.html">
+              <a href="projects/webgl">
                 <div class="projectTile">
                   <h3>WebGL</h3>
                 </div>
@@ -70,7 +70,7 @@
           <!-- <p class="text-white"></p> -->
           <div class="projectTile" style="background-image: url('images/icons/dsgn384.png')"/>
             <div class="descriptionHover">
-              <a href="projects/dsgn384.html">
+              <a href="projects/dsgn384">
                 <div class="projectTile">
                   <h3>DSGN384</h3>
                 </div>
@@ -79,7 +79,7 @@
           </div>
           <div class="projectTile" style="background-image: url('images/icons/industrialDesign.png')"/>
             <div class="descriptionHover">
-              <a href="projects/industrialDesign.html">
+              <a href="projects/industrialDesign">
                 <div class="projectTile">
                   <h3>Industrial Design</h3>
                 </div>

@@ -18,11 +18,11 @@
       <div class="navbar-container">
         <table>
           <tr>
-            <td><a href="../index.html">Home</a></td>
-            <td class="selected"><a href="../projects.html">Projects</a></td>
+            <td><a href="../index">Home</a></td>
+            <td class="selected"><a href="../project">Projects</a></td>
             <!-- <td><a href="../skills.html">Skills</a></td> -->
-            <td><a href="../about.html">About Me</a></td>
-            <td><a href="../contact.html">Contact</a></td>
+            <td><a href="../about">About Me</a></td>
+            <td><a href="../contact">Contact</a></td>
           </tr>
         </table>
       </div>
@@ -46,7 +46,7 @@
             <p>The objective of the assignment was to familiarise myself with WebGL coding and its basic rendering functions.</p>
             <p>I wanted to create 3D characters that I knew using simple shapes. I drew basic shapes like pyramids and cubes, and more complicated ones like a parabolic dome and a pentagon. I also tried implementing gradients in the shading.</p>
             <p>I implemented click-and-drag navigation, and did some leg and tentacle movements that the user could control too.</p>
-            <p>You can view Squidwards and Patricks <a href="LohLyanne_ProjA.html" target="_blank">here</a>.</p>
+            <p>You can view Squidwards and Patricks <a href="LohLyanne_ProjA" target="_blank">here</a>.</p>
           </div>
           <div class="twoColsB">
             <img class="imageSlider" src="../images/webgl/projectA.jpg"/>
@@ -58,7 +58,7 @@
           <div class="twoColsA">
             <p>I wanted to animate the iconic Pixar lamp. This was much more challenging to animate than squids and starfish, due to the complexity of the moving parts. Users viewing this model could use the ground grid and keyboard navigation to move in the scene.</p>
             <p>The objective was to explore different camera settings and to have two view ports. I rendered a perspective view (on left), and an orthogonal view (on right) of the same scene.</p>
-            <p>You can view P I X A R <a href="LohLyanne_ProjB.html" target="_blank">here</a>.</p>
+            <p>You can view P I X A R <a href="LohLyanne_ProjB" target="_blank">here</a>.</p>
           </div>
           <div class="twoColsB">
             <img class="imageSlider" src="../images/webgl/projectB.jpg"/>
@@ -72,7 +72,7 @@
             <p>I implemented Blinn-Phong and Phong lighting settings, which determine how light reflects off of objects and materials in the scene. I also implemented Phong and Gouraud shading settings, which determine how objects are rendered in the scene.</p>
             <p>I considered different material effects - I used 5 material settings like red plastic, shiny platinum, and black rubber on the lamps and on the ground grid.</p>
             <p>Similar to Project B, users can navigate using keyboard controls, with additional settings for rolling left and right, and a cruise setting that moves the view forward. Users can toggle and adjust settings for the 2 light sources (a wrold light and a head light).</p>
-            <p>You can view P I X A R in Technicolor <a href="LohLyanne_ProjC.html" target="_blank">here</a>.</p>
+            <p>You can view P I X A R in Technicolor <a href="LohLyanne_ProjC" target="_blank">here</a>.</p>
           </div>
           <div class="twoColsB">
             <div class="imageSlider long_aspectratio">
