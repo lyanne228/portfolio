@@ -1,16 +1,16 @@
 .about1, .about2, .about3 {
   position: relative;
   padding: 150px;
-  padding-top: 250px;
+  padding-top: 100px;
   height: 0;
   width: 0;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
-.about1 { background: rgba(0, 0, 0, 0.3); }
+.about1 { background-image: url('../images/aboutMe/travelling.jpg'); }
 .about2 { background: rgba(0, 0, 0, 0.4); }
-.about3 { background: rgba(0, 0, 0, 0.5); }
-.about1 p, .about2 p, .about3 p {
-  width: 40vw;
-}
+.about3 { background-image: url('../images/aboutMe/running.jpg'); }
+.text-wrapper { background-color: rgba(255,255,255,0.7); width: 40vw; padding: 10px; }
+p, h2 { color: #000; margin: 10px 0; }
+p { font-weight: normal; }
