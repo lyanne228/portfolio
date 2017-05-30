@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .about1 { background-image: url('../images/aboutMe/travelling.jpg'); }
-.about2 { background: rgba(0, 0, 0, 0.4); }
+.about2 { background-image: url('../images/aboutMe/baking.jpg'); }
 .about3 { background-image: url('../images/aboutMe/running.jpg'); }
 .text-wrapper { background-color: rgba(255,255,255,0.7); width: 40vw; padding: 10px; }
 p, h2 { color: #000; margin: 10px 0; }

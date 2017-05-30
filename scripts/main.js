@@ -1,10 +1,12 @@
 function main() {
+  window.setTimeout(arrowScrollChange, 500);
   arrowScrollChange();
   $(window).scroll(arrowScrollChange);
   $('.upDownArrows').click(function(){
-    var n = $(document).height() - $(window).height();
+    var imageNum = Math.round($(window).scrollTop()/$(window).height());
+    var down = $(document).height() - (2-imageNum)*$(window).height();
     if (~$(this).css('background-image').indexOf('down')){
-      $('html, body').animate({ scrollTop: n }, 800);
+      $('html, body').animate({ scrollTop: down }, 800);
     } else {
       $('html, body').animate({ scrollTop: 0 }, 800);
     }
