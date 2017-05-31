@@ -29,7 +29,7 @@ function submitForm(){
   //   window.location("index.html");
   //   return false;
   // });
-  console.log("hello").done(function(){
+  $.when(console.log("hello")).done(function(){
     window.location("index.html");
     return false;
   });
