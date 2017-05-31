@@ -16,4 +16,9 @@ function contactMain(){
   });
 }
 
+function submitForm(){
+  window.location.replace("../contact.html");
+}
+
+
 $(document).ready(contactMain);
