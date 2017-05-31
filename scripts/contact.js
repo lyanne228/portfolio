@@ -17,15 +17,19 @@ function contactMain(){
 }
 
 function submitForm(){
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
-    type: "POST",
-    data: {
-      name: "testing",
-      email: "lyanne228@gmail.com",
-      message: "testing"
-    }
-  }).done(function(){
+  // $.ajax({
+  //   url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
+  //   type: "POST",
+  //   data: {
+  //     name: "testing",
+  //     email: "lyanne228@gmail.com",
+  //     message: "testing"
+  //   }
+  // }).done(function(){
+  //   window.location("index.html");
+  //   return false;
+  // });
+  console.log("hello").done(function(){
     window.location("index.html");
     return false;
   });
