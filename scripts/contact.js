@@ -25,8 +25,8 @@ function submitForm(){
       email: "lyanne228@gmail.com",
       message: "testing"
     }
-  }).then(function(){
-    window.location.replace("http://lyanneloh.com");
+  }).done(function(){
+    window.location("http://lyanneloh.com");
     return false;
   });
 }
