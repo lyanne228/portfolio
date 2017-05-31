@@ -29,8 +29,9 @@ function submitForm(){
   //   window.location("index.html");
   //   return false;
   // });
-  $.when(console.log("hello")).done(function(){
+  $.when(console.log("byebye")).done(function(){
     window.location.replace("http://www.lyanneloh.com");
+    return;
   });
 }
 
