@@ -26,7 +26,7 @@ function submitForm(){
       message: "testing"
     }
   }).done(function(){
-    window.location("http://lyanneloh.com");
+    window.location("index.html");
     return false;
   });
 }
