@@ -27,6 +27,7 @@ function submitForm(){
   //   }
   // }).then(function(){
     window.location.replace("http://lyanneloh.com");
+    return false;
   // });
 }
 
