@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,400" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="scripts/contact.js"></script>
+  <script src="scripts/contact_me.js"></script>
 
   <body>
     <section class="navbar">
@@ -33,7 +34,7 @@
           <tr>
             <td><img id="contactPageIcon" src="images/contactPageIcon.gif"></td>
             <td id="contactFormTd">
-              <form id="contactForm" name="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec">
+              <form name="sentMessage" id="contactForm" novalidate>
                 <input name="name" id="name" type="text" placeholder="Name"/>
                 <input name="email" id="email" type="email" placeholder="Email"/>
                 <textarea rows="6" id="message" name="message" form="contactForm" placeholder="Message"></textarea>
