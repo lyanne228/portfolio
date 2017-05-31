@@ -17,16 +17,17 @@ function contactMain(){
 }
 
 function submitForm(){
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
-    type: "POST",
-    data: {
-      name: "testing",
-      email: "lyanne228@gmail.com",
-      message: "testing"
-    }
-  });
-  window.location.replace("http://lyanneloh.com");
+  // $.ajax({
+  //   url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
+  //   type: "POST",
+  //   data: {
+  //     name: "testing",
+  //     email: "lyanne228@gmail.com",
+  //     message: "testing"
+  //   }
+  // }).then(function(){
+    window.location.replace("http://lyanneloh.com");
+  // });
 }
 
 
