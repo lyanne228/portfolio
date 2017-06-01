@@ -17,7 +17,7 @@ function contactMain(){
 }
 
 function submitForm(){
-  $('#formResponse').style('display', 'inline');
+  $('#formResponse').css('display', 'inline');
   console.log("hello");
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
