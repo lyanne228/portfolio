@@ -23,7 +23,7 @@ function submitForm(){
     data: {
       name: $('#name').val(),
       email: $('#email').val(),
-      message: $('#message').val(),
+      message: $('#message').val()
     },
     success: function() {
       console.log("hello");
