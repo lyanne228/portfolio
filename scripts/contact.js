@@ -21,9 +21,9 @@ function submitForm(){
     url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
     type: "POST",
     data: {
-      name: $('#name').value(),
-      email: $('#email').value(),
-      message: $('#message').value()
+      name: $('#name').val(),
+      email: $('#email').val(),
+      message: $('#message').val()
     }
   }).done(function(){
     window.location = "http://www.lyanneloh.com";
