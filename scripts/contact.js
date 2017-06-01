@@ -27,6 +27,7 @@ function submitForm(){
     }
   });
   $('#formResponse').style('display', 'inline');
+  console.log("hello");
 }
 
 
