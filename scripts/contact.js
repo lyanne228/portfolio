@@ -25,10 +25,8 @@ function submitForm(){
       email: $('#email').val(),
       message: $('#message').val()
     }
-  }).done(function(){
-    window.location = "http://www.lyanneloh.com";
-    return;
   });
+  $('#formResponse').style('display', 'inline');
 }
 
 
