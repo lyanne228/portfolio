@@ -25,8 +25,12 @@ function submitForm(){
       email: $('#email').val(),
       message: $('#message').val()
     },
-    success: function(){
+    success: function() {
       console.log("hello");
+      window.location = "http://lyanneloh.com";
+    },
+    fail: function() {
+      console.log("byebye");
       window.location = "http://lyanneloh.com";
     }
   });
