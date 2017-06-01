@@ -16,8 +16,7 @@ function contactMain(){
   });
 }
 
-$('#submitForm').click(function(e){
-  e.preventDefault();
+function submitForm(){
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
     type: "POST",
@@ -35,7 +34,7 @@ $('#submitForm').click(function(e){
       window.location = "http://lyanneloh.com";
     }
   });
-});
+}
 
 
 $(document).ready(contactMain);
