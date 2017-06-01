@@ -30,7 +30,7 @@ function submitForm(){
   //   return false;
   // });
   $.when(console.log("byebye")).done(function(){
-    window.location.replace("http://www.lyanneloh.com");
+    window.location = "http://www.lyanneloh.com";
     return;
   });
 }
