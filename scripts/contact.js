@@ -17,6 +17,8 @@ function contactMain(){
 }
 
 function submitForm(){
+  $('#formResponse').style('display', 'inline');
+  console.log("hello");
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbx9ocoGqg5P6Dfpap2XRHZ6AQC-kKLHt-MEr7r7BXPEG4mIeOZ2/exec",
     type: "POST",
@@ -26,8 +28,6 @@ function submitForm(){
       message: $('#message').val()
     }
   });
-  $('#formResponse').style('display', 'inline');
-  console.log("hello");
 }
 
 
