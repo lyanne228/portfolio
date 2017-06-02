@@ -21,7 +21,7 @@ function projectPagesMain() {
       amount = '+=' + $(this).parent().parent().children('.allImagesSlider').width();
     else
       amount = '-=480';
-    scrollImageSlider($(this).parent().parent());
+    scrollImageSlider($(this).parent());
   });
   $('.rightArrow').click(function(){
     if ($(this).parent().scrollLeft()
