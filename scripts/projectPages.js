@@ -17,8 +17,8 @@ function projectPagesMain() {
   });
 
   $('.leftArrow').click(function(){
-    if ($(this).parent().parent().scrollLeft() <= 0)
-      amount = '+=' + $(this).parent().parent().children('.allImagesSlider').width();
+    if ($(this).parent().scrollLeft() <= 0)
+      amount = '+=' + $(this).parent().children('.allImagesSlider').width();
     else
       amount = '-=480';
     scrollImageSlider($(this).parent());
