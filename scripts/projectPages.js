@@ -12,6 +12,9 @@ function projectPagesMain() {
     $(this).css('top', '+=' + $(this).parent().offset().top);
     $(this).css('left', '+=' + $(this).parent().offset().left);
   });
+  $('.rightArrow').each(function(){
+    $(this).css('left', '+=' + ($(this).parent().width()-67));
+  });
 
   $('.leftArrow').click(function(){
     if ($(this).parent().parent().scrollLeft() <= 0)
@@ -21,18 +24,17 @@ function projectPagesMain() {
     scrollImageSlider($(this).parent().parent());
   });
   $('.rightArrow').click(function(){
-    if ($(this).parent().parent().scrollLeft()
-        >= $(this).parent().parent().children('.allImagesSlider').width()
-        - $(this).parent().parent().children('.allImagesSlider').children('.singleImage').width())
-      amount = '-=' + $(this).parent().parent().children('.allImagesSlider').width();
+    if ($(this).parent().scrollLeft()
+        >= $(this).parent().children('.allImagesSlider').width()
+        - $(this).parent().children('.allImagesSlider').children('.singleImage').width())
+      amount = '-=' + $(this).parent().children('.allImagesSlider').width();
     else
       amount = '+=480';
-    scrollImageSlider($(this).parent().parent());
+    scrollImageSlider($(this).parent());
   });
 }
 
 function scrollImageSlider(horCont){
-  console.log(horCont.scrollLeft());
   horCont.animate({
     scrollLeft: amount
   }, 500, 'linear', function(){});

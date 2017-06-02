@@ -62,15 +62,12 @@
 .imageSliderControls {
   position: absolute;
   z-index: 3;
-  height: auto;
   top: 0;
-  left: 0; }
-.imageSliderControls img {
+  left: 0;
   height: 100px;
   width: 67px;
   margin: 0;
   background-color: rgba(0,0,0,0.4); }
-.sixteen_nine .imageSliderControls img { margin-top: 85px; }
-.long_aspectratio .imageSliderControls img { margin-top: 51px; }
-.video_aspectratio .imageSliderControls img { margin-top: 377px; }
-.imageSliderControls .rightArrow { float: right; }
+.sixteen_nine .imageSliderControls { margin-top: 85px; }
+.long_aspectratio .imageSliderControls { margin-top: 51px; }
+.video_aspectratio .imageSliderControls { margin-top: 377px; }
