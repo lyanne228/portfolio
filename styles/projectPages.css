@@ -67,7 +67,8 @@
   height: 100px;
   width: 67px;
   margin: 0;
-  background-color: rgba(0,0,0,0.4); }
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer; }
 .sixteen_nine .imageSliderControls { margin-top: 85px; }
 .long_aspectratio .imageSliderControls { margin-top: 51px; }
 .video_aspectratio .imageSliderControls { margin-top: 377px; }
