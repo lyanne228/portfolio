@@ -4,7 +4,7 @@ function main() {
   $(window).scroll(arrowScrollChange);
   $('.upDownArrows').click(function(){
     var imageNum = Math.round($(window).scrollTop()/$(window).height());
-    var down = $(document).height() - ($(document).height()/$(window).height()-1-imageNum)*$(window).height();
+    var down = $(document).height() - ($(document).height()/$(window).height()-1-imageNum)*$(window).height()+1;
     if (~$(this).css('background-image').indexOf('down')){
       $('html, body').animate({ scrollTop: down }, 800);
     } else {
