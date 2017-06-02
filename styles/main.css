@@ -96,3 +96,6 @@ a:active, a:hover {
   display: table-cell;
   vertical-align: middle;
 }
+.projectTitle {
+  width: auto;
+}

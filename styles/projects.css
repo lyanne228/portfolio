@@ -19,5 +19,12 @@
   height: inherit;
   text-align: center;
 }
+.projectsPageGraphic table {
+  margin:auto;
+  table-layout: fixed;
+}
+.projectsPageGraphic td {
+  width: 170px;
+}
 #engBanner { right: 0px; }
 #desBanner { left: 0px; }
